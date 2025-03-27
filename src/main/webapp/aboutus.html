@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        background-color: #093d68;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      #nav {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 5rem;
+        width: 100%;
+        background-color: rgb(237, 237, 219);
+        box-sizing: border-box; /* Ensures padding is included in width */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+      }
+
+      #navtag {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        align-items: center;
+        width: 50vw;
+        height: 10vh;
+        /* background-color: rgb(232, 238, 238); */
+        color: black;
+      }
+
+      .navlinks > a {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+      }
+
+      .navlinks > a:hover {
+        color: white;
+        background-color: black; /* Add a background color on hover */
+        padding: 0.5rem 1rem; /* Add padding for a button-like effect */
+        border-radius: 5px; /* Rounded corners on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        transform: scale(1.1); /* Slightly enlarge the element */
+      }
+      .banking {
+        color: black;
+      }
+      main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1,
+      h2 {
+        color: black;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="nav">
+      <div class="banking">
+        <h1>BANKING APPLICATION</h1>
+      </div>
+      <div id="navtag">
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="navlinks">
+          <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="navlinks">
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Who We Are</h2>
+      <p>
+        Welcome to our bank! We are committed to providing exceptional financial
+        services to our customers. Our mission is to empower individuals and
+        businesses by offering reliable and innovative banking solutions.
+      </p>
+
+      <h2>Our Vision</h2>
+      <p>
+        We aim to be a trusted partner in your financial journey, delivering
+        excellence and fostering long-term relationships built on trust and
+        transparency.
+      </p>
+
+      <h2>Our Values</h2>
+      <ul>
+        <li>
+          <strong>Integrity:</strong> We uphold the highest standards of honesty
+          and ethics.
+        </li>
+        <li>
+          <strong>Customer Focus:</strong> Your satisfaction is our priority.
+        </li>
+        <li>
+          <strong>Innovation:</strong> We embrace change and continuously
+          improve our services.
+        </li>
+        <li>
+          <strong>Community:</strong> We are dedicated to making a positive
+          impact in the communities we serve.
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>&copy; 2023 BankProject. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

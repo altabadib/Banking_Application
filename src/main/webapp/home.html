@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        background-color: #093d68;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      #nav {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 5rem;
+        width: 100%;
+        background-color: rgb(237, 237, 219);
+        box-sizing: border-box; /* Ensures padding is included in width */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+      }
+
+      #navtag {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        align-items: center;
+        width: 50vw;
+        height: 10vh;
+        /* background-color: rgb(232, 238, 238); */
+        color: black;
+      }
+
+      .navlinks > a {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+      }
+
+      .navlinks > a:hover {
+        color: white;
+        background-color: black; /* Add a background color on hover */
+        padding: 0.5rem 1rem; /* Add padding for a button-like effect */
+        border-radius: 5px; /* Rounded corners on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        transform: scale(1.1); /* Slightly enlarge the element */
+      }
+      h1 {
+        color: black;
+      }
+      .hero {
+        text-align: center;
+        padding: 2rem;
+        background-color: #e8f5e9;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .hero button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        color: white;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .hero button:hover {
+        background-color: #45a049;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="nav">
+      <div class="banking">
+        <h1>BANKING APPLICATION</h1>
+      </div>
+      <div id="navtag">
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="navlinks">
+          <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="navlinks">
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <h1>Your Trusted Banking Partner</h1>
+      <p>
+        We provide the best financial solutions to help you achieve your goals.
+      </p>
+      <button>Learn More</button>
+    </div>
+    <footer>
+      <p>&copy; 2023 Our Bank. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

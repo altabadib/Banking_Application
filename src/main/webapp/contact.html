@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+      header {
+        background-color: #093d68;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      #nav {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 5rem;
+        width: 100%;
+        background-color: rgb(237, 237, 219);
+        box-sizing: border-box; /* Ensures padding is included in width */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+      }
+
+      #navtag {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        align-items: center;
+        width: 50vw;
+        height: 10vh;
+        /* background-color: rgb(232, 238, 238); */
+        color: black;
+      }
+
+      .navlinks > a {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+      }
+
+      .navlinks > a:hover {
+        color: white;
+        background-color: black; /* Add a background color on hover */
+        padding: 0.5rem 1rem; /* Add padding for a button-like effect */
+        border-radius: 5px; /* Rounded corners on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        transform: scale(1.1); /* Slightly enlarge the element */
+      }
+      h2 {
+        color: black;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="nav">
+      <div class="banking">
+        <h1>BANKING APPLICATION</h1>
+      </div>
+      <div id="navtag">
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="navlinks">
+          <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="navlinks">
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="/submitContact" method="post">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
