@@ -71,10 +71,10 @@ body {
   align-items: center;
 }
 #option {
-  width: 60vw;
-  height: 20vh;
+  width: max-content;
+  height: 30vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 3rem;
   align-items: center;
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
@@ -90,6 +90,8 @@ body {
   font-weight: bold;
   padding: 10px 20px;
   cursor: pointer;
+  max-width: 100%;
+  display: flex;
 }
 
 .btntext {

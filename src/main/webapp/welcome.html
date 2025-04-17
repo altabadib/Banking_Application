@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Our Banking Application</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e6f7ff; /* Soft blue background */
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
+          ),
+          url("Images/welcome.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3em; /* Larger font size */
+        font-family: "Georgia", serif; /* Elegant font */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        color: #004080; /* Dark blue color */
+        margin-bottom: 40px;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      a.button,
+      input[type="submit"] {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        font-family: "Verdana", sans-serif;
+        color: #fff;
+        background-color: #28a745; /* Green background */
+        border: none;
+        border-radius: 10px; /* Rounded corners */
+        cursor: pointer;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        text-decoration: none; /* Remove underline for anchor */
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        width: 220px;
+        display: inline-block;
+      }
+
+      a.button:hover,
+      input[type="submit"]:hover {
+        background-color: #218838; /* Darker green on hover */
+        transform: scale(1.1); /* Slightly larger on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Our Banking Application</h1>
+    <form action="login" method="post">
+      <a href="login.html" class="button">Customer Login</a>
+      <a href="register.html" class="button">Register</a>
+      <a href="adminLogin.html" class="button">Admin Login</a>
+    </form>
+  </body>
+</html>

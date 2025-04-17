@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Login</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #d17e81, #fad0c4, #fbc2eb);
+        color: #333;
+      }
+      .login-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 100%;
+        /* margin: 0 20px; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .login-container h2 {
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+        color: #444;
+      }
+      .login-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .login-container input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+      .login-container input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+      .login-container input[type="submit"] {
+        background-color: #0b0c0c;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      .login-container button:hover {
+        background-color: #0056b3;
+        transform: scale(1.02);
+      }
+      .login-container p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .login-container a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .login-container a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Customer Login</h2>
+      <form action="loginServlet" method="post">
+        <input
+          type="text"
+          name="accountNumber"
+          placeholder="Account Number"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" >Login</input>
+      </form>
+      <p>
+        If you don't have an account, <a href="register.html">Register Here</a>.
+      </p>
+    </div>
+  </body>
+</html>

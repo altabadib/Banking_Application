@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Transfer Amount</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	background: #ffffff;
+	padding: 20px 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #555;
+}
+
+input, select, button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+button {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+</style>
+</head>
+<body>
+	<%
+    long accNo=Long.parseLong(request.getParameter("accno"));
+    %>
+	<div class="container">
+		<h1>Transfer Amount</h1>
+		<form action="customerTransferAmount" method="POST">
+			<label for="fromAccount">From Account</label> <input type="text"
+				id="fromAccount" name="fromAccount" value="<%= accNo %>" readonly />
+			<label for="toAccount">To Account</label> <input type="text"
+				id="toAccount" name="toAccount"
+				placeholder="Enter recipient's account number" required />
+
+			<label for="amount">Amount</label> <input type="number" id="amount"
+				name="amount" placeholder="Enter amount to transfer" required />
+
+			<label for="description">Description</label> <input type="text"
+				id="description" name="description"
+				placeholder="Enter a description (optional)" />
+			<button type="submit" onclick="console.log('Button')">Transfer</button>
+		</form>
+	</div>
+</body>
+</html>
